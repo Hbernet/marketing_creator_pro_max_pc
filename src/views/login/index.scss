@@ -1,0 +1,176 @@
+@import "@/styles/_variables";
+.login-cell {
+  min-height: $--full-height;
+  background: url("@assets/images/login_bg.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+  .left {
+    .title-cell {
+      display: flex;
+      align-items: center;
+      img {
+        width: 60px;
+        height: 54px;
+        display: block;
+      }
+      p {
+        padding-left: 32px;
+        font-size: 50px;
+        line-height: 70px;
+        font-weight: 600;
+      }
+    }
+    h2 {
+      padding-top: 40px;
+      margin: 0;
+      font-size: 40px;
+      line-height: 60px;
+      font-weight: 600;
+    }
+    ul {
+      padding: 60px 0 0 20px;
+      margin: 0;
+      li {
+        font-size: 24px;
+        line-height: 72px;
+        font-weight: 500;
+      }
+    }
+  }
+  .right {
+    width: 704px;
+    height: 630px;
+    box-sizing: border-box;
+    padding: 32px;
+    background: url("@assets/images/login_input_bg.png") no-repeat;
+    background-size: 100%;
+    h2 {
+      font-size: 36px;
+      line-height: 80px;
+      font-weight: 500;
+      margin: 0;
+    }
+    .login-form {
+      padding-top: 50px;
+      overflow: hidden;
+      ::v-deep .el-form-item {
+        margin-bottom: 54px;
+      }
+      ::v-deep .el-input {
+        height: 80px;
+        font-size: 24px;
+        --el-input-icon-color: #ffffff;
+        --el-input-clear-hover-color: #ffffff;
+        .el-input__wrapper {
+          background: rgba(0,0,0, 0.7);
+          border-radius: 10px;
+        }
+        .el-input__password {
+          font-size: 20px;
+        }
+      }
+    }
+    .login-btn {
+      margin-top: 16px;
+      height: 80px;
+      background: $--color-main-gradient;
+      line-height: 80px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 28px;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+  }
+}
+@media (max-width: 1600px) {
+  .login-cell {
+    background: url("@assets/images/login_bg.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 160px;
+    .left {
+      .title-cell {
+        display: flex;
+        align-items: center;
+        img {
+          width: 60px;
+          height: 54px;
+          display: block;
+        }
+        p {
+          padding-left: 24px;
+          font-size: 36px;
+          line-height: 60px;
+          font-weight: 600;
+        }
+      }
+      h2 {
+        padding-top: 32px;
+        margin: 0;
+        font-size: 36px;
+        line-height: 60px;
+        font-weight: 600;
+      }
+      ul {
+        padding: 32px 0 0 20px;
+        margin: 0;
+        li {
+          font-size: 20px;
+          line-height: 52px;
+          font-weight: 500;
+        }
+      }
+    }
+    .right {
+      width: 520px;
+      height: 448px;
+      box-sizing: border-box;
+      padding: 32px;
+      background: url("@assets/images/login_input_bg.png") no-repeat;
+      background-size: 100%;
+      h2 {
+        font-size: 24px;
+        line-height: 56px;
+        font-weight: 500;
+        margin: 0;
+      }
+      .login-form {
+        padding-top: 32px;
+        overflow: hidden;
+        ::v-deep .el-form-item {
+          margin-bottom: 32px;
+        }
+        ::v-deep .el-input {
+          height: 64px;
+          font-size: 16px;
+          --el-input-icon-color: #ffffff;
+          --el-input-clear-hover-color: #ffffff;
+          .el-input__wrapper {
+            background: rgba(0,0,0, 0.7);
+            border-radius: 8px;
+          }
+          .el-input__password {
+            font-size: 20px;
+          }
+        }
+      }
+      .login-btn {
+        margin-top: 16px;
+        height: 64px;
+        background: $--color-main-gradient;
+        line-height: 64px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 4px;
+      }
+    }
+  }
+}
